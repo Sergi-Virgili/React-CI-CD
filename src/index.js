@@ -3,8 +3,6 @@ import ReactDOM from "react-dom/client";
 
 import App from "./App";
 import { Router } from "./application/router";
-import Expenses from "./pages/Expenses";
-import Invoices from "./pages/Invoices";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(

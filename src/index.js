@@ -1,27 +1,15 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
-import {
-  BrowserRouter,
-  Routes,
-  Route,
-  HashRouter,
-  MemoryRouter,
-  Router,
-} from "react-router-dom";
+
 import App from "./App";
+import { Router } from "./application/router";
 import Expenses from "./pages/Expenses";
 import Invoices from "./pages/Invoices";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
-    <BrowserRouter basename="React-CI-CD">
-      <Routes>
-        <Route path="/" element={<App />} />
-        <Route path="expenses" element={<Expenses />} />
-        <Route path="invoices" element={<Invoices />} />
-      </Routes>
-    </BrowserRouter>
+    <Router />
   </React.StrictMode>
 );
 

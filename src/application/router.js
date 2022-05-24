@@ -8,10 +8,11 @@ import {
 import App from "../App";
 import Expenses from "../pages/Expenses";
 import Invoices from "../pages/Invoices";
+import { config } from "./config";
 
 export const Router = () => {
   return (
-    <BrowserRouter basename="React-CI-CD">
+    <BrowserRouter basename={process.env.PUBLIC_URL}>
       <Routes>
         <Route path="/" element={<App />}>
           <Route path="expenses" element={<Expenses />} />

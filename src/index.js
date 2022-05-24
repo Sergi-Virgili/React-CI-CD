@@ -15,13 +15,13 @@ import Invoices from "./pages/Invoices";
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
-    <HashRouter>
+    <BrowserRouter basename="React-CI-CD">
       <Routes>
         <Route path="/" element={<App />} />
         <Route path="expenses" element={<Expenses />} />
         <Route path="invoices" element={<Invoices />} />
       </Routes>
-    </HashRouter>
+    </BrowserRouter>
   </React.StrictMode>
 );
 
